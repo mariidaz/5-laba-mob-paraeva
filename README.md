@@ -4,29 +4,7 @@
 
 ## Запуск
 
-### Спосіб 1. Прямий запуск на Java 17 із терміналу (без Android Studio)
-
-Потрібен встановлений **JDK 17+**. У корені проєкту додано нативний Java-раннер `SideADesktopApp.java`, який відкриває мобільне вікно застосунку напряму через JVM:
-
-```powershell
-javac -encoding UTF-8 -d build SideADesktopApp.java
 java -cp build SideADesktopApp
-```
-
-### Спосіб 2. Через Android Studio (Android Emulator)
-
-Потрібна **Android Studio** з встановленим **Android SDK 34** та **JDK 17**. API key чи фізичний смартфон Android не потрібні — застосунок запускається на вбудованому в Android Studio віртуальному пристрої (**Android Emulator / AVD**).
-
-1. Відкрий теку проєкту `5` у **Android Studio** (`File -> Open`).
-2. Дочекайся завершення **Gradle Sync**.
-3. Обери віртуальний пристрій у **Device Manager** (Android 8.0 / API 26+) і натисни **Run (`Shift + F10`)**.
-
-Або через термінал:
-
-```powershell
-./gradlew assembleDebug
-./gradlew testDebugUnitTest
-```
 
 ## Функції
 
